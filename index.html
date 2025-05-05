@@ -26,7 +26,7 @@
         color: rgb(0, 0, 0);
         text-decoration: none;
         transition: color 0.3s;
-        font-size: 20px;
+        font-size: 18px;
         }
 
         /* Apply underline animation only for screen width >= 768px */
@@ -47,14 +47,14 @@
         }
         }
         .nav-item{
-            padding: 0 10px;
+            padding: 0 8px;
         }
 
         a.navbar-brand {
         color: #ff805a !important;
         font-size: 40px;
-        font-weight: 700;
-        padding: 13px;
+        font-weight: 500;  
+        padding: 11px;
         text-decoration: none;
         }
 
@@ -63,17 +63,23 @@
         text-decoration: none;
         }
 
+        .dropdown-menu {
+        max-height: 300px;
+        overflow-y: auto;
+      }
+      
+
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top " style="border-radius: 0 0 30px 30px; background-color: #f8f9fa;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <div style="display: inline-block; padding: 6px;">
+            <div style="display: inline-block; padding: 3px;">
                 <img src="/SVG icons/pet_love/pawprint (1).png"
                      alt="Logo"
-                     width="57"
-                     height="53"
+                     width="45"
+                     height="42"
                      style="border-radius: 50%;">
             </div>            
             4EVER
@@ -99,8 +105,24 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <div class="input-group "style="width: 300px; margin-right: 20px; border-radius: 30px;">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" style="border-radius: 30px 0 0 30px;">
+            <div class="d-flex" role="search">
+                <a href="#" class="btn btn-outline-secondary" style="border-radius: 30px; border: 1px solid #999392b2; margin-right: 10px;">Login</a>
+            </div>
+            <div class="dropdown me-2">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 30px; width: 150px;">
+                🌐 Language
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/united-kingdom.png" width="20" class="me-2"> English (UK)</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/united-states.png" width="20" class="me-2"> English (US)</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/spain.png" width="20" class="me-2"> Spanish (Spain)</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/mexico.png" width="20" class="me-2"> Spanish (Mexico)</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/france.png" width="20" class="me-2"> French (France)</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/canada.png" width="20" class="me-2"> French (Canada)</a></li>
+              </ul>
+            </div>            
+            <div class="input-group "style="width: 200px; margin-right: 10px; border-radius: 30px;">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" style="border-radius: 30px 0 0 30px;">
                 <button class="btn btn-outline-dark" type="button" id="button-addon2" style="border-radius: 0 30px 30px 0; border: 1px solid #999392b2;">
                     <img src="/SVG icons/pet_love/search (1).png" alt="Search" width="30" height="30" class="d-inline-block align-text-top">
                 </button>

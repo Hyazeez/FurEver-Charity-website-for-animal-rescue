@@ -1,4 +1,4 @@
-# 4EVER - Animal Charity Website 🐾
+# FurEver - Animal Charity Website 🐾
 
 A modern, responsive website to support animal rescue and adoption efforts.
 

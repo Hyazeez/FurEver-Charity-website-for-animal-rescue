@@ -23,6 +23,8 @@
 
         nav {
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            margin: 25px 15px;
+            border-radius: 30px;
         }
 
         .nav-link {
@@ -81,6 +83,8 @@
         
         font-family: 'Poppins';
         font-weight: 400;
+        display: grid;
+        height: 100vh; 
       }
 
       .container {
@@ -173,100 +177,131 @@
       justify-content: center;
       color: #fff;
       padding: 20px;
-      padding-top: 100px;
-      border-radius: 10px;
+      padding-top: 80px;
       text-align: center;
-      margin: 40px 0;
+      margin-bottom: 40px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease-in-out;
       font-family: 'Poppins', sans-serif;
       font-size: 1.5rem;
       font-weight: 600;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      border-radius: 30px 30px 30px 30px;
-      margin: 40px;
     }
 
-    .item5 {
+    .item6 {
       text-align: center;
       color: #fff;
       padding: 20px;
       background-color: #17151b;
       height: 130px;
     }
+
+    .cal {
+      width: 90px;
+      height: 90px;
+      background-color: rgb(0, 0, 0);
+      color: #fff;
+      text-align: center;
+      font-size: 25px;
+      padding-top: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+
+    }
+
+    .cal2 {
+      margin: 0 20px;
+      padding-top: 24px;
+    }
+
+    .event {
+      border: 2px solid rgb(255, 255, 255);
+      margin: 30px 0;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      height: 200px;
+    }
+
+    .item4 {
+      margin: 30px;
+    }
+
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark sticky-top " style="border-radius: 0 0 30px 30px;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <div style="display: inline-block; padding: 3px;">
-                <img src="/SVG icons/pet_love/pawprint(3).png"
-                     alt="Logo"
-                     width="48"
-                     height="58"
-                     style="border-radius: 50%; padding-bottom: 11px;">
-            </div>            
-            FurEver
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 pd-3">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="donate.html">Donate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <div class="d-flex" role="search">
-                <a href="#" class="btn btn-dark" style="border-radius: 30px; border: 1px solid #999392b2; margin-right: 10px;"><img src="/SVG icons/user.png" width="20" class="me-2">Login</a>
-            </div>
-            <div class="dropdown me-2">
-              <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 30px; width: 150px; border: 1px solid #999392b2;">
-                 Language
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/united-kingdom.png" width="20" class="me-2"> English (UK)</a></li>
-                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/united-states.png" width="20" class="me-2"> English (US)</a></li>
-                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/spain.png" width="20" class="me-2"> Spanish (Spain)</a></li>
-                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/mexico.png" width="20" class="me-2"> Spanish (Mexico)</a></li>
-                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/france.png" width="20" class="me-2"> French (France)</a></li>
-                <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/canada.png" width="20" class="me-2"> French (Canada)</a></li>
-              </ul>
-            </div>            
-            <div class="input-group "style="width: 200px; margin-right: 10px; border-radius: 30px;">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" style="border-radius: 30px 0 0 30px;">
-                <button class="btn btn-dark" type="button" id="button-addon2" style="border-radius: 0 30px 30px 0; border: 1px solid #999392b2;">
-                    <img src="/SVG icons/search (2).png" alt="Search" width="30" height="30" class="d-inline-block align-text-top">
-                </button>
-            </div> 
-          </div>
-        </div>
-      </nav>
 
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <div style="display: inline-block; padding: 3px;">
+            <img src="/SVG icons/pet_love/pawprint(3).png"
+                 alt="Logo"
+                 width="48"
+                 height="58"
+                 style="border-radius: 50%; padding-bottom: 11px;">
+        </div>            
+        FurEver
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 pd-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex" role="search">
+            <a href="login.html" class="btn btn-dark" style="border-radius: 30px; border: 1px solid #999392b2; margin-right: 10px;"><img src="/SVG icons/user.png" width="20" class="me-2">Login</a>
+        </div>
+        <div class="dropdown me-2">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 30px; width: 150px; border: 1px solid #999392b2;">
+             Language
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/united-kingdom.png" width="20" class="me-2"> English (UK)</a></li>
+            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/united-states.png" width="20" class="me-2"> English (US)</a></li>
+            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/spain.png" width="20" class="me-2"> Spanish (Spain)</a></li>
+            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/mexico.png" width="20" class="me-2"> Spanish (Mexico)</a></li>
+            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/france.png" width="20" class="me-2"> French (France)</a></li>
+            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/canada.png" width="20" class="me-2"> French (Canada)</a></li>
+          </ul>
+        </div>            
+        <div class="input-group "style="width: 200px; margin-right: 10px; border-radius: 30px;">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" style="border-radius: 30px 0 0 30px;">
+            <button class="btn btn-dark" type="button" id="button-addon2" style="border-radius: 0 30px 30px 0; border: 1px solid #999392b2;">
+                <img src="/SVG icons/search (2).png" alt="Search" width="30" height="30" class="d-inline-block align-text-top">
+            </button>
+        </div> 
+      </div>
+    </div>
+  </nav>
       <main>
         <article>
           <!-- Hero section -->
           
-          <div class="item pb-5">
+          <div class="item">
             <h2 class="mb-4 pt-4" style="font-size: 50px;">Welcome to the FurEver</h2>
             <p class="lead fs-4">
             FurEver is a global initiative dedicated to rescuing, healing, and rehoming animals in need — no matter where they are. 
             We believe every animal around the world deserves love, care, and a second chance.<br>
             Join with us in our mission to make the world a better place for animals everywhere.</p><br>
-            <button class="btn btn-primary">Explore more</button>
+            <button class="btn btn-primary" type="submit">Explore more</button>
           </div>
 
           <div class="container">
@@ -354,9 +389,50 @@
   </div>
 </section>
 
+<!-- Charity Events & Campaigns -->
+<section class="events-section">
+  <div class="item4">
+    <h1 class="section-title text-center fs-1 pb-4">Upcoming Events & Campaigns</h1>
+    
+    <div class="event">
+      <div class="cal">Jun<br/> 15</div>
+      <div class="cal2 col-md-7">
+      <h3>🐾 Rescue Drive 2025</h3>
+      <p>Join our volunteers across 10 cities to rescue and provide care for street animals. Transport and medical kits provided!</p>
+      </div>
+      <button type="button" class="btn btn-dark" style="height: 60px; width: 180px; margin: 43px 0 0 100px;">View Event<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="margin-left: 15px;">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+      </svg></button>
+    </div>
+
+    <div class="event">
+      <div class="cal">Jul<br/> 10</div>
+      <div class="cal2 col-md-7">
+      <h3>🎉 FurEver Fundraiser Gala</h3>
+      <p>An elegant evening of dining, stories, and support to raise funds for animal shelters and emergency aid programs.</p>
+      </div>
+      <button type="button" class="btn btn-dark" style="height: 60px; width: 180px; margin: 43px 0 0 100px;">View Event<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="margin-left: 15px;">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+      </svg></button>
+    </div>
+
+    <div class="event">
+      <div class="cal">Aug<br/> 21</div>
+      <div class="cal2 col-md-7">
+      <h3>🌍 Global Adoption Week</h3>
+      <p>We’re connecting hundreds of rescued animals with families worldwide. Find your new best friend!</p>
+      </div>
+      <button type="button" class="btn btn-dark" style="height: 60px; width: 180px; margin: 43px 0 0 100px;">View Event<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="margin-left: 15px;">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+      </svg></button>
+    </div>
+  </div>
+</section>
+
+
 <!-- Testimonials Carousel -->
 <section class="text-center py-5">
-  <div class="item4">
+  <div class="item5">
     <h2 class="mb-4">What People Say</h2>
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -403,9 +479,11 @@
 </section>
  </main>
 
+ 
+
  <!-- Footer -->
 <footer class="site-footer">
-  <div class="item5">
+  <div class="item6">
     <p>&copy; 2025 FurEver Charity. All rights reserved.</p>
     <div class="footer-links">
       <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>

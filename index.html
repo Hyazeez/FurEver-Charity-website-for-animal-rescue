@@ -23,8 +23,8 @@
 
         nav {
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            margin: 25px 15px;
-            border-radius: 30px;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 20px;
         }
 
         .nav-link {
@@ -227,7 +227,30 @@
 
     .item4 {
       margin: 30px;
+      color: #fff;
     }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card-title a {
+      color: #7645d8;
+      text-decoration: none;
+    }
+    .card-title a:hover {
+      text-decoration: underline;
+    }
+
+    .itemnew {
+      margin: 40px;
+    }
+
 
     </style>
 </head>
@@ -388,6 +411,62 @@
     </div>
   </div>
 </section>
+
+<!-- Supporting Organizations -->
+<section class="text-center my-5">
+  <h1 class="mb-4" style="color: #ffffff;">Our Supporting Organizations</h1>
+  <p class="text-light mb-5 fs-5">We are proud to collaborate with these incredible organizations committed to animal welfare.</p>
+  <div class="itemnew">
+    <div class="row justify-content-center align-items-center g-4">
+
+      <!-- WWF -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <img src="/images/Panda_WWF_20x30mm_300PPI_0.png" class="card-img-top mx-auto" alt="WWF" style="max-height: 80px; width: auto;">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://www.worldwildlife.org/" target="_blank">World Wildlife Fund (WWF)</a></h5>
+            <p class="card-text">WWF works to conserve nature and reduce the most pressing threats to the diversity of life on Earth.They support wildlife protection programs worldwide.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RSPCA -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <img src="/images/RSPCA.jfif" class="card-img-top mx-auto" alt="RSPCA" style="max-height: 80px; width: auto;">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://www.rspca.org.uk/" target="_blank">RSPCA</a></h5>
+            <p class="card-text">The Royal Society for the Prevention of Cruelty to Animals rescues, rehabilitates, and rehomes animals while advocating for stronger animal welfare laws.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PETA -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <img src="/images/PETA.png" class="card-img-top mx-auto" alt="PETA" style="max-height: 80px; width: auto;">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://www.peta.org/" target="_blank">PETA</a></h5>
+            <p class="card-text">(PETA) is the largest animal rights organization, focusing on ending animal abuse in food, clothing, and entertainment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HSI -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <img src="/images/humane_society_international_australia_logo.jfif" class="card-img-top mx-auto" alt="HSI" style="max-height: 80px; width: auto;">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://www.hsi.org/" target="_blank">Humane Society International (HSI)</a></h5>
+            <p class="card-text">HSI is a global organization working to protect animals and promote their welfare through advocacy, education, and hands-on programs.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- Charity Events & Campaigns -->
 <section class="events-section">

@@ -89,6 +89,26 @@
         background-color: #17151b;
         height: 130px;
         }
+
+      .other-methods {
+        background: #f8f9fa;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 10px 10px 0 0;
+      }
+      .other-methods h3 {
+        color: #212529;
+      }
+      .other-methods li {
+        margin-bottom: 0.5rem;
+      }
+
+      form{
+        color: black;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px auto;
+      }
     </style>
 </head>
 <body>
@@ -128,21 +148,8 @@
           </li>
         </ul>
         <div class="d-flex" role="search">
-            <a href="login.html" class="btn btn-dark" style="border-radius: 30px; border: 1px solid #999392b2; margin-right: 10px;"><img src="/SVG icons/user.png" width="20" class="me-2">Login</a>
-        </div>
-        <div class="dropdown me-2">
-          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 30px; width: 150px; border: 1px solid #999392b2;">
-             Language
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/united-kingdom.png" width="20" class="me-2"> English (UK)</a></li>
-            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/united-states.png" width="20" class="me-2"> English (US)</a></li>
-            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/spain.png" width="20" class="me-2"> Spanish (Spain)</a></li>
-            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/mexico.png" width="20" class="me-2"> Spanish (Mexico)</a></li>
-            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/france.png" width="20" class="me-2"> French (France)</a></li>
-            <li><a class="dropdown-item" href="#"><img src="/SVG icons/country/canada.png" width="20" class="me-2"> French (Canada)</a></li>
-          </ul>
-        </div>            
+            <a href="login.html" class="btn btn-dark" style="border-radius: 30px; border: 1px solid #999392b2; margin-right: 20px;"><img src="/SVG icons/user.png" width="20" class="me-2">Login / SignUp</a>
+        </div>           
         <div class="input-group "style="width: 200px; margin-right: 10px; border-radius: 30px;">
             <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" style="border-radius: 30px 0 0 30px;">
             <button class="btn btn-dark" type="button" id="button-addon2" style="border-radius: 0 30px 30px 0; border: 1px solid #999392b2;">
@@ -152,37 +159,47 @@
       </div>
     </div>
   </nav>
-  <!-- Donate Hero Section -->
-  <section class="hero donate-hero">
-    <div class="container">
-      <h2>Make a Difference</h2>
-      <p>Your donation helps us rescue, feed, and care for animals in need.</p>
-    </div>
-  </section>
 
   <!-- Donation Form Section -->
-  <section class="donation-form">
-    <div class="container">
-      <h3>Donate Now</h3>
-      <form action="#" method="post">
-        <label for="name">Full Name</label><br>
-        <input type="text" id="name" name="name" required /><br><br>
-
-        <label for="email">Email Address</label><br>
-        <input type="email" id="email" name="email" required /><br><br>
-
-        <label for="amount">Donation Amount (USD)</label><br>
-        <input type="number" id="amount" name="amount" min="1" required /><br><br>
-
-        <label for="message">Message (optional)</label><br>
-        <textarea id="message" name="message" rows="4"></textarea><br><br>
-
-        <button type="submit" class="btn">Donate Now</button><br><br>
-        <p>All donations are tax-deductible. Thank you for your support!</p>
-        <p>By donating, you agree to our <a href="#">Terms and Conditions</a>.</p>
-      </form>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="text-center mb-4" style="color: #fff; font-family: Arial, Helvetica, sans-serif;">Support Our Cause</h1>
+        <p class="text-center mb-4" style="color: #fff; font-size: 1.2rem;">
+          Every contribution makes a difference in the lives of animals we rescue and care for.
+        </p>
+        <form class="row g-3">
+          <div class="col-md-12">
+            <label for="fullname" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullname" placeholder="Enter your name" required>
+          </div>
+          <div class="col-md-12">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="col-md-12">
+            <label for="donationAmount" class="form-label">Donation Amount (USD)</label>
+            <input type="number" class="form-control" id="donationAmount" placeholder="Enter donation amount" required>
+          </div>
+          <div class="col-md-12">
+            <label for="inputAddress" class="form-label">Message (optional)</label>
+            <textarea class="form-control" id="inputAddress" placeholder="Enter your message"></textarea>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="termsCheck" required>
+              <label class="form-check-label" for="termsCheck">I agree to the terms and conditions</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-dark w-100" style="margin: 20px 0;">Donate Now</button>
+            <p>All donations are tax-deductible. Thank you for your support!</p>
+            <p>By donating, you agree to our <a href="#">Terms and Conditions</a>.</p>
+          </div>
+        </form>
+      </div>
     </div>
-  </section>
+  </div>
 
   <!-- Alternative Methods -->
   <section class="other-methods">

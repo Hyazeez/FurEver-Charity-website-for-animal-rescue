@@ -89,6 +89,78 @@
         background-color: #17151b;
         height: 130px;
         }
+
+      .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+    }
+
+    .contact-left {
+      background-size: cover;
+      color: #fff;
+      padding: 60px 40px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-left .info {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .contact-left h4 {
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    .contact-left p, .contact-left a {
+      color: #00c674;
+      margin-bottom: 10px;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .contact-right {
+      flex: 1;
+      background-color: #fff;
+      padding: 60px 40px;
+    }
+
+    .contact-right h2 {
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .form-control:focus {
+      border-color: #00c674;
+      box-shadow: 0 0 0 0.2rem rgba(0,198,116,0.25);
+    }
+
+    .btn-custom {
+      background-color: #00c674;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #009d5c;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+
+      .contact-left, .contact-right {
+        padding: 30px 20px;
+      }
+    }
     </style>
 </head>
 <body>
@@ -141,6 +213,56 @@
   </nav>
 
   <!-- Main Content -->
+  <section class="contact-section">
+  <!-- Left side: Contact Info -->
+  <div class="contact-left">
+    <div class="info">
+      <h3>Address</h3>
+      <p>Mada Center 8th floor, 379 Hudson St,<br>New York, NY 10018 US</p>
+
+      <h4>Let’s Talk</h4>
+      <p><a href="tel:+18001236879">+1 800 123 6879</a></p>
+
+      <h4>General Support</h4>
+      <p><a href="mailto:furevercare@yahoo.com">furevercare@yahoo.com</a></p>
+
+      <div class="mt-5">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.978097742886!2d-74.0059411845958!3d40.71277517933011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQyJzQ2LjAiTiA3NMKwMDAnMjUuMCJX!5e0!3m2!1sen!2sus!4v1629999999999"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+    </div>
+
+    
+  </div>
+
+  <!-- Right side: Form -->
+  <div class="contact-right">
+    <h2>Send Us A Message</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <input type="text" class="form-control" placeholder="First name *" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Last name *" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Eg. example@email.com *" required>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Eg. +1 800 000000">
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="5" placeholder="Write us a message *" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Send Message</button>
+    </form>
+  </div>
+</section>
    
 
    <!-- Footer -->

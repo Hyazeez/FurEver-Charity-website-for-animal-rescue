@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | FurEver - Charity for Animal Rescue</title>
     <!-- Favicon -->
-    <link rel="icon" href="/SVG icons/pet_love/pawprint(3).png" type="image/png">
+    <link rel="icon" href="SVG icons/pet_love/pawprint(3).png" type="image/png">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -199,7 +199,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <div style="display: inline-block; padding: 3px;">
-            <img src="/SVG icons/pet_love/pawprint(3).png"
+            <img src="SVG icons/pet_love/pawprint(3).png"
                  alt="Logo"
                  width="48"
                  height="58"
@@ -216,10 +216,10 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="index.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="index.html">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="donate.html">Donate</a>
@@ -231,7 +231,7 @@
         <div class="input-group "style="width: 200px; margin-right: 10px; border-radius: 30px;">
             <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" style="border-radius: 30px 0 0 30px;">
             <button class="btn btn-dark" type="button" id="button-addon2" style="border-radius: 0 30px 30px 0; border: 1px solid #999392b2;">
-                <img src="/SVG icons/search (2).png" alt="Search" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="SVG icons/search (2).png" alt="Search" width="30" height="30" class="d-inline-block align-text-top">
             </button>
         </div>
       </div>
@@ -267,23 +267,23 @@
   <!-- Right side: Form -->
   <div class="contact-right">
     <h2>Send Us A Message</h2>
-    <form>
+    <form method="post" action="process2.php">
       <div class="row mb-3">
         <div class="col-md-6 mb-3 mb-md-0">
-          <input type="text" class="form-control" placeholder="First name *" required>
+          <input type="text" class="form-control" name="fname" placeholder="First name *" required>
         </div>
         <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Last name *" required>
+          <input type="text" class="form-control" name="lname" placeholder="Last name *" required>
         </div>
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Eg. example@email.com *" required>
+        <input type="email" class="form-control" name="email" placeholder="Eg. example@email.com *" required>
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Eg. +1 800 000000">
+        <input type="text" class="form-control" name="mobile" placeholder="Eg. +1 800 000000">
       </div>
       <div class="mb-3">
-        <textarea class="form-control" rows="5" placeholder="Write us a message *" required></textarea>
+        <textarea class="form-control" rows="5" name="message" placeholder="Write us a message *" required></textarea>
       </div>
       <button type="submit" class="btn btn-dark">Send Message</button>
     </form>
@@ -302,16 +302,16 @@
       </div>
       <div class="social-icons">
         <a href="https://facebook.com" target="_blank">
-          <img src="/SVG icons/social media/facebook.png" alt="Facebook">
+          <img src="SVG icons/social media/facebook.png" alt="Facebook">
         </a>
         <a href="https://instagram.com" target="_blank">
-          <img src="/SVG icons/social media/instagram.png" alt="Instagram">
+          <img src="SVG icons/social media/instagram.png" alt="Instagram">
         </a>
         <a href="https://linkedin.com" target="_blank">
-          <img src="/SVG icons/social media/linkedin.png" alt="LinkedIn">
+          <img src="SVG icons/social media/linkedin.png" alt="LinkedIn">
         </a>
         <a href="https://twitter.com" target="_blank">
-          <img src="/SVG icons/social media/twitter.png" alt="Twitter">
+          <img src="SVG icons/social media/twitter.png" alt="Twitter">
         </a>
       </div>
     </div>

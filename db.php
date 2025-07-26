@@ -1,8 +1,8 @@
 <?php
-$host = "localhost:3307";
-$username = "root";
-$password = "";
-$database = "furever_database";
+$host = "localhost";
+$username = "your_host_username";
+$password = "your_host_password";
+$database = "your_host_db_name";
 
 $conn = new mysqli($host, $username, $password, $database);
 

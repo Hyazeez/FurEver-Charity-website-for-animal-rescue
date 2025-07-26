@@ -206,19 +206,19 @@
         <form class="row g-3" action="process.php" method="POST">
           <div class="col-md-12">
             <label for="fullname" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
           </div>
           <div class="col-md-12">
             <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
           </div>
           <div class="col-md-12">
             <label for="donationAmount" class="form-label">Donation Amount (USD)</label>
-            <input type="number" class="form-control" id="donations" placeholder="Enter donation amount" required>
+            <input type="number" class="form-control" id="donation" name="donation" placeholder="Enter donation amount" required>
           </div>
           <div class="col-md-12">
             <label for="inputAddress" class="form-label">Message (optional)</label>
-            <textarea class="form-control" id="message" placeholder="Enter your message"></textarea>
+            <textarea class="form-control" id="message" name="message" placeholder="Enter your message"></textarea>
           </div>
           <div class="col-12">
             <div class="form-check">

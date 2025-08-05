@@ -104,6 +104,7 @@
         box-shadow: 1px 5px 15px #1e0e3e;
         position: relative;
         overflow: hidden;
+        margin-bottom: 15px;
 
         &:nth-of-type(1) {
           background: url("images/pexels-mikhail-nilov-7469218.jpg") no-repeat 50% / cover;
@@ -168,6 +169,46 @@
       }
     }
 
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        height: auto;
+      }
+
+      .container>div {
+        flex: 0 0 calc(50% - 10px);
+        /* Two cards per row */
+        height: 200px;
+        /* Adjust height if needed */
+        margin-bottom: 20px;
+      }
+
+      .container>div:hover {
+        flex: 0 0 calc(50% - 10px);
+        /* Prevent growing on hover */
+        transform: none;
+      }
+
+      .container>div:hover .content {
+        opacity: 1;
+        transform: translateY(0%);
+        visibility: visible;
+      }
+
+      .container>div .content {
+        font-size: 1rem;
+        padding: 10px;
+        transition: opacity 0.3s ease-in-out, transform 0.3s 0.2s;
+      }
+
+      .container>div .content span {
+        font-size: 0.9rem;
+      }
+    }
+
+
     .item {
       background: url("images/smiley-boy-posing-with-dog-while-out-park.jpg") no-repeat 50% / cover;
       height: 500px;
@@ -204,6 +245,7 @@
       padding-top: 10px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
       margin: 20px;
+      border-radius: 8px;
 
     }
 
@@ -227,6 +269,8 @@
       margin: 30px;
       color: #fff;
     }
+
+
 
     .card {
       background-color: #ffffff;
@@ -309,6 +353,81 @@
 
     html {
       scroll-behavior: smooth;
+    }
+
+    /* Responsive for tablets and mobile devices */
+    @media (max-width: 768px) {
+      .event {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .cal {
+        margin: 0 auto 20px;
+        width: 70px;
+        height: 80px;
+        font-size: 20px;
+        padding-top: 12px;
+        border-radius: 8px;
+      }
+
+      .cal2 {
+        margin: 0;
+        padding-top: 10px;
+      }
+
+      .item4 {
+        margin: 20px;
+      }
+
+      .item5 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left-section {
+        max-width: 100%;
+      }
+
+      .footer-links,
+      .social-icons {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cal {
+        width: 60px;
+        height: 70px;
+        font-size: 18px;
+        padding-top: 10px;
+        border-radius: 8px;
+      }
+
+      .cal2 h3 {
+        font-size: 18px;
+      }
+
+      .event {
+        padding: 15px;
+      }
+
+      .item5 {
+        padding: 15px;
+      }
+
+      .footer-links a {
+        display: inline-block;
+        margin: 5px 10px;
+      }
+
+      .social-icons a img {
+        width: 24px;
+        height: 24px;
+      }
     }
   </style>
 </head>
@@ -455,7 +574,7 @@
                 pet care</li>
             </ul>
             <p class="mt-3">With your support, we're building a kinder world—one paw at a time.</p>
-            <button class="btn btn-success mt-4" onclick="window.location.href='donate.html'">
+            <button class="btn btn-success mt-2 mb-4" onclick="window.location.href='donate.html'">
               Support Our Mission
             </button>
           </div>
@@ -509,8 +628,7 @@
           <!-- PETA -->
           <div class="col-md-4">
             <div class="card h-100 text-center p-3">
-              <img src="images/PETA.png" class="card-img-top mx-auto" alt="PETA"
-                style="max-height: 80px; width: auto;">
+              <img src="images/PETA.png" class="card-img-top mx-auto" alt="PETA" style="max-height: 80px; width: auto;">
               <div class="card-body">
                 <h5 class="card-title"><a href="https://www.peta.org/" target="_blank">PETA</a></h5>
                 <p class="card-text">(PETA) is the largest animal rights organization, focusing on ending animal abuse
@@ -571,7 +689,7 @@
             <p>Join our volunteers across 10 cities to rescue and provide care for street animals. Transport and medical
               kits provided!</p>
           </div>
-          <button type="button" class="btn btn-dark" style="height: 60px; width: 180px; margin: 43px 0 0 100px;">View
+          <button type="button" class="btn btn-dark" style="height: 60px; width: 180px;">View
             Event<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
               class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="margin-left: 15px;">
               <path fill-rule="evenodd"
@@ -586,7 +704,7 @@
             <p>An elegant evening of dining, stories, and support to raise funds for animal shelters and emergency aid
               programs.</p>
           </div>
-          <button type="button" class="btn btn-dark" style="height: 60px; width: 180px; margin: 43px 0 0 100px;">View
+          <button type="button" class="btn btn-dark" style="height: 60px; width: 180px;">View
             Event<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
               class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="margin-left: 15px;">
               <path fill-rule="evenodd"
@@ -600,7 +718,7 @@
             <h3>🌍 Global Adoption Week</h3>
             <p>We’re connecting hundreds of rescued animals with families worldwide. Find your new best friend!</p>
           </div>
-          <button type="button" class="btn btn-dark" style="height: 60px; width: 180px; margin: 43px 0 0 100px;">View
+          <button type="button" class="btn btn-dark" style="height: 60px; width: 180px;">View
             Event<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
               class="bi bi-arrow-right-circle" viewBox="0 0 16 16" style="margin-left: 15px;">
               <path fill-rule="evenodd"

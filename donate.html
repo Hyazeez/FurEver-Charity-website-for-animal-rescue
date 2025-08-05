@@ -16,8 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
   <!-- Compiled CSS link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <style>
     body {
       font-family: 'Poppins';
@@ -144,6 +144,40 @@
     .social-icons a:hover {
       transform: scale(1.2);
     }
+
+    /* Responsive for tablets and mobile devices */
+    @media (max-width: 768px) {
+
+      .item5 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left-section {
+        max-width: 100%;
+      }
+
+      .footer-links,
+      .social-icons {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .item5 {
+        padding: 15px;
+      }
+
+      .footer-links a {
+        display: inline-block;
+        margin: 5px 10px;
+      }
+
+      .social-icons a img {
+        width: 24px;
+        height: 24px;
+      }
+    }
   </style>
 </head>
 
@@ -210,11 +244,13 @@
           </div>
           <div class="col-md-12">
             <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address"
+              required>
           </div>
           <div class="col-md-12">
             <label for="donationAmount" class="form-label">Donation Amount (USD)</label>
-            <input type="number" class="form-control" id="donation" name="donation" placeholder="Enter donation amount" required>
+            <input type="number" class="form-control" id="donation" name="donation" placeholder="Enter donation amount"
+              required>
           </div>
           <div class="col-md-12">
             <label for="inputAddress" class="form-label">Message (optional)</label>
@@ -274,7 +310,9 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | FurEver - Charity for Animal Rescue</title>
-    <!-- Favicon -->
-    <link rel="icon" href="SVG icons/pet_love/pawprint(3).png" type="image/png">
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | FurEver - Charity for Animal Rescue</title>
+  <!-- Favicon -->
+  <link rel="icon" href="SVG icons/pet_love/pawprint(3).png" type="image/png">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    <!-- Compiled CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <style>
-          body {
-            font-family: 'Poppins';
-            background-color: #8a58ec;
-            font-weight: 400;
-        }
+  <!-- Compiled CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Poppins';
+      background-color: #8a58ec;
+      font-weight: 400;
+    }
 
-        nav {
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        }
+    nav {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        .nav-link {
-        position: relative;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        transition: color 0.3s;
-        font-size: 18px;
-        }
+    .nav-link {
+      position: relative;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      transition: color 0.3s;
+      font-size: 18px;
+    }
 
-        
-        @media (min-width: 768px) {
-        .nav-link::after {
+
+    @media (min-width: 768px) {
+      .nav-link::after {
         content: '';
         position: absolute;
         left: 0;
@@ -44,41 +48,42 @@
         width: 0;
         background-color: #ff805a;
         transition: width 0.3s ease-in-out;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        }
-        .nav-item{
-            padding: 0 8px;
-        }
-
-        a.navbar-brand {
-        font-family: 'Pacifico', cursive;
-        color: #ff805a !important;
-        font-size: 40px;
-        font-weight: 300;  
-        padding: 11px;
-        text-decoration: none;
-        }
-
-        a.navbar-brand:hover {
-        color: #ff805a !important;
-        text-decoration: none;
-        }
-
-        .dropdown-menu {
-        max-height: 300px;
-        overflow-y: auto;
       }
 
-      * {
-        box-sizing: border-box;
-        } 
+      .nav-link:hover::after {
+        width: 100%;
+      }
+    }
 
-      
-      .contact-section {
+    .nav-item {
+      padding: 0 8px;
+    }
+
+    a.navbar-brand {
+      font-family: 'Pacifico', cursive;
+      color: #ff805a !important;
+      font-size: 40px;
+      font-weight: 300;
+      padding: 11px;
+      text-decoration: none;
+    }
+
+    a.navbar-brand:hover {
+      color: #ff805a !important;
+      text-decoration: none;
+    }
+
+    .dropdown-menu {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    .contact-section {
       display: flex;
       flex-wrap: wrap;
       min-height: 100vh;
@@ -105,7 +110,8 @@
       font-weight: 500;
     }
 
-    .contact-left p, .contact-left a {
+    .contact-left p,
+    .contact-left a {
       color: #00c674;
       margin-bottom: 10px;
       font-size: 15px;
@@ -125,7 +131,7 @@
 
     .form-control:focus {
       border-color: #00c674;
-      box-shadow: 0 0 0 0.2rem rgba(0,198,116,0.25);
+      box-shadow: 0 0 0 0.2rem rgba(0, 198, 116, 0.25);
     }
 
     .btn-custom {
@@ -186,12 +192,47 @@
         flex-direction: column;
       }
 
-      .contact-left, .contact-right {
+      .contact-left,
+      .contact-right {
         padding: 30px 20px;
       }
     }
-    </style>
+
+    @media (max-width: 768px) {
+
+      .item5 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left-section {
+        max-width: 100%;
+      }
+
+      .footer-links,
+      .social-icons {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .item5 {
+        padding: 15px;
+      }
+
+      .footer-links a {
+        display: inline-block;
+        margin: 5px 10px;
+      }
+
+      .social-icons a img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- Header -->
@@ -199,15 +240,13 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <div style="display: inline-block; padding: 3px;">
-            <img src="SVG icons/pet_love/pawprint(3).png"
-                 alt="Logo"
-                 width="48"
-                 height="58"
-                 style="border-radius: 50%; padding-bottom: 11px;">
-        </div>            
+          <img src="SVG icons/pet_love/pawprint(3).png" alt="Logo" width="48" height="58"
+            style="border-radius: 50%; padding-bottom: 11px;">
+        </div>
         FurEver
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -227,12 +266,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
-        </ul>         
-        <div class="input-group "style="width: 200px; margin-right: 10px; border-radius: 30px;">
-            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" style="border-radius: 30px 0 0 30px;">
-            <button class="btn btn-dark" type="button" id="button-addon2" style="border-radius: 0 30px 30px 0; border: 1px solid #999392b2;">
-                <img src="SVG icons/search (2).png" alt="Search" width="30" height="30" class="d-inline-block align-text-top">
-            </button>
+        </ul>
+        <div class="input-group " style="width: 200px; margin-right: 10px; border-radius: 30px;">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+            aria-describedby="button-addon2" style="border-radius: 30px 0 0 30px;">
+          <button class="btn btn-dark" type="button" id="button-addon2"
+            style="border-radius: 0 30px 30px 0; border: 1px solid #999392b2;">
+            <img src="SVG icons/search (2).png" alt="Search" width="30" height="30"
+              class="d-inline-block align-text-top">
+          </button>
         </div>
       </div>
     </div>
@@ -240,59 +282,58 @@
 
   <!-- Main Content -->
   <section class="contact-section">
-  <!-- Left side: Contact Info -->
-  <div class="contact-left">
-    <div class="info">
-      <h3>Address</h3>
-      <p>Mada Center 8th floor, 379 Hudson St,<br>New York, NY 10018 US</p>
+    <!-- Left side: Contact Info -->
+    <div class="contact-left">
+      <div class="info">
+        <h3>Address</h3>
+        <p>Mada Center 8th floor, 379 Hudson St,<br>New York, NY 10018 US</p>
 
-      <h4>Let’s Talk</h4>
-      <p><a href="tel:+18001236879">+1 800 123 6879</a></p>
+        <h4>Let’s Talk</h4>
+        <p><a href="tel:+18001236879">+1 800 123 6879</a></p>
 
-      <h4>General Support</h4>
-      <p><a href="mailto:furevercare@yahoo.com">furevercare@yahoo.com</a></p>
+        <h4>General Support</h4>
+        <p><a href="mailto:furevercare@yahoo.com">furevercare@yahoo.com</a></p>
 
-      <div class="mt-5">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.978097742886!2d-74.0059411845958!3d40.71277517933011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQyJzQ2LjAiTiA3NMKwMDAnMjUuMCJX!5e0!3m2!1sen!2sus!4v1629999999999"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
-    </div>
-    </div>
-
-    
-  </div>
-
-  <!-- Right side: Form -->
-  <div class="contact-right">
-    <h2>Send Us A Message</h2>
-    <form method="post" action="process2.php">
-      <div class="row mb-3">
-        <div class="col-md-6 mb-3 mb-md-0">
-          <input type="text" class="form-control" name="fname" placeholder="First name *" required>
-        </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control" name="lname" placeholder="Last name *" required>
+        <div class="mt-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.978097742886!2d-74.0059411845958!3d40.71277517933011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQyJzQ2LjAiTiA3NMKwMDAnMjUuMCJX!5e0!3m2!1sen!2sus!4v1629999999999"
+            allowfullscreen="" loading="lazy">
+          </iframe>
         </div>
       </div>
-      <div class="mb-3">
-        <input type="email" class="form-control" name="email" placeholder="Eg. example@email.com *" required>
-      </div>
-      <div class="mb-3">
-        <input type="text" class="form-control" name="mobile" placeholder="Eg. +1 800 000000">
-      </div>
-      <div class="mb-3">
-        <textarea class="form-control" rows="5" name="message" placeholder="Write us a message *" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-dark">Send Message</button>
-    </form>
-  </div>
-</section>
-   
 
-   <!-- Footer -->
-<footer class="site-footer">
+
+    </div>
+
+    <!-- Right side: Form -->
+    <div class="contact-right">
+      <h2>Send Us A Message</h2>
+      <form method="post" action="process2.php">
+        <div class="row mb-3">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <input type="text" class="form-control" name="fname" placeholder="First name *" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" name="lname" placeholder="Last name *" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" name="email" placeholder="Eg. example@email.com *" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" name="mobile" placeholder="Eg. +1 800 000000">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" name="message" placeholder="Write us a message *" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="item5 d-flex justify-content-between align-items-center flex-wrap">
       <div class="left-section">
         <p class="mb-1">&copy; 2025 FurEver Charity. All rights reserved.</p>
@@ -316,6 +357,9 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
